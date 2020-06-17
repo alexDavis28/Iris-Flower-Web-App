@@ -42,11 +42,6 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_probability = clf.predict_proba(df)
 
-
-probability = 1
-
-
-
 prediction_string = f"The iris is a {iris.target_names[prediction][0]}, with a probability of {prediction_probability.flat[prediction][0]}"
 st.write(prediction_string)
 
